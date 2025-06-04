@@ -10,6 +10,7 @@ import secondProduct from "../assets/images/shopy3.webp"
 import thirdProduct from "../assets/images/shopy4.webp"
 import fourthProduct from "../assets/images/shopy5.webp"
 import videoBackground from "../assets/images/bg-video-01.jpg"
+import bannerBg from "../assets/images/banner.webp"
 export const Images = {
     logo ,
     firstItemCarousel,
@@ -22,5 +23,6 @@ export const Images = {
     secondProduct,
     thirdProduct,
     fourthProduct,
-    videoBackground
+    videoBackground,
+    bannerBg
 }

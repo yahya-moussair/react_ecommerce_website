@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      <div className="bg-[#f0f0f0] lg:pb-25 lg:pt-15 md:pb-25 md:pt-15 py-10 lg:ps-15 w-full h-fit gap-y-10 flex lg:flex-row md:flex-row flex-col justify-between pe-10">
+      <div className="mt-20 bg-[#f0f0f0] lg:pb-25 lg:pt-15 md:pb-25 md:pt-15 py-10 lg:ps-15 w-full h-fit gap-y-10 flex lg:flex-row md:flex-row flex-col justify-between pe-10">
         <div className="lg:ps-0 md:ps-0 ps-5 lg:w-1/4 md:w-1/4 w-full pe-9 flex flex-col gap-y-8">
           <h1 className="font-bold text-xl">GET IN TOUCH</h1>
           <p className="text-[0.8rem] text-gray-500">

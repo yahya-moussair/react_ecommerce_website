@@ -3,14 +3,16 @@
     font-family: "Roboto", sans-serif;
     user-select: none;
 }
-body{
-    height: 500vh;
-    position: relative;
-}
 .bgImage{
     background: url(./assets/images/bg-video-01.jpg);
     background-position: center;
     background-size: 100% 80%;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+.bgImages{
+    background: url(./assets/images/banner.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
