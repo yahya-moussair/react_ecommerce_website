@@ -16,3 +16,9 @@
     background-size: cover;
     background-position: center;
 }
+.bgAbout{
+    background: url(./assets/images/banner.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
