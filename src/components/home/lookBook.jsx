@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaPlay } from "react-icons/fa";
-import video from "../../assets/videos/SampleVideo_1280x720_1mb";
+import video from "../../assets/videos/simpleVideoi.mp4";
 import { MdCancel } from "react-icons/md";
 
 const LookBook = () => {
