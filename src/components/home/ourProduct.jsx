@@ -62,7 +62,7 @@ const OurProduct = () => {
                   ADD TO CART
                 </button>
               </div>
-              <Link to="#">
+              <Link to={`/details/${e.id}`}>
                 <h1 className="text-lg text-gray-500 hover:text-[#e65540] lg:transition-all duration-300">{e.name}</h1>
               </Link>
               <div className="flex gap-x-4 items-center">

@@ -6,6 +6,7 @@ import Footer from "./layouts/footer";
 import Shop from "./pages/shop";
 import Contact from "./pages/contact";
 import About from "./pages/about";
+import DetailsProduct from "./pages/detailsProduct";
 
 const App = () => {
 
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/shop" element={<Shop />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/details/:id" element={<DetailsProduct />} />
       </Routes>
       <Footer />
     </>

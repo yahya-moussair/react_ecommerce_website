@@ -1,24 +1,29 @@
 @import "tailwindcss";
-*{
-    font-family: "Roboto", sans-serif;
-    user-select: none;
+* {
+  font-family: "Roboto", sans-serif;
+  user-select: none;
 }
-.bgImage{
-    background: url(./assets/images/bg-video-01.jpg);
-    background-position: center;
-    background-size: 100% 80%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+.bgImage {
+  background: url(./assets/images/bg-video-01.jpg);
+  background-position: center;
+  background-size: 100% 80%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
-.bgImages{
-    background: url(./assets/images/banner.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.bgImages {
+  background: url(./assets/images/banner.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-.bgAbout{
-    background: url(./assets/images/banner.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.bgAbout {
+  background: url(./assets/images/banner.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

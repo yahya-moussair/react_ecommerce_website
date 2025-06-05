@@ -24,7 +24,7 @@ const Hero = () => {
     <div className="w-full h-[80vh] relative group">
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].image})` }}
-        className="w-full h-full bg-center bg-cover flex flex-col items-center justify-center gap-y-5 duration-5000"
+        className="w-full h-full bg-center bg-cover flex flex-col items-center justify-center gap-y-5"
       >
         <h1 className="text-white lg:text-[8rem] md:text-6xl text-5xl font-extrabold">Leather Bags</h1>
         <span className="w-[70%] bg-white h-[4px] rounded-full"></span>
