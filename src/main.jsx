@@ -8,9 +8,7 @@ import { MyProvider } from "./context/index.jsx";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
-      <MyProvider>
-        <App />
-      </MyProvider>
+      <App />
     </BrowserRouter>
   </StrictMode>
 );

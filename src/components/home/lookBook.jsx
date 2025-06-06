@@ -32,20 +32,20 @@ const LookBook = () => {
           <span className="absolute bottom-0 left-0 w-full h-[1px] bg-white hidden lg:group-hover:flex"></span>
         </button>
         <div
-          className={`before:content-["] before:absolute before:w-full before:h-full before:bg-gray-800/50 before:z-10 absolute h-screen w-screen flex items-center justify-center z-50 ${
+          className={`before:content-["] before:fixed before:flex before:items-center before:justify-center fixed top-0 before:w-full before:h-screen before:top-0 before:bg-gray-800/50 before:z-10 h-screen w-screen flex items-center justify-center z-50 ${
             open ? "flex" : "hidden"
           } transition-all duration-500`}
         >
+          <MdCancel
+            onClick={() => setOpen(false)}
+            className="absolute right-[20px] top-[20px] text-green-50 z-50 cursor-pointer text-4xl"
+          />
           <video
             src={video}
             className="w-[80%] h-[80%] z-20"
             type="video/mp4"
             controls
           ></video>
-          <MdCancel
-            onClick={() => setOpen(false)}
-            className="absolute right-[20px] top-[20px] text-black z-50 cursor-pointer text-4xl"
-          />
         </div>
       </div>
     </>

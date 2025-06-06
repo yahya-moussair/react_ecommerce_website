@@ -8,21 +8,23 @@ import Contact from "./pages/contact";
 import About from "./pages/about";
 import DetailsProduct from "./pages/detailsProduct";
 import Cart from "./pages/cart";
+import { MyProvider } from "./context";
 
 const App = () => {
-
   return (
     <>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/shop" element={<Shop />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/details/:id" element={<DetailsProduct />} />
-        <Route path="/cart" element={<Cart />} />
-      </Routes>
-      <Footer />
+      <MyProvider>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/details/:id" element={<DetailsProduct />} />
+          <Route path="/cart" element={<Cart />} />
+        </Routes>
+        <Footer />
+      </MyProvider>
     </>
   );
 };

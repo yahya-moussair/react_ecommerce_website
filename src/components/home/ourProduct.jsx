@@ -6,22 +6,20 @@ const OurProduct = () => {
   const { products } = useAppContext();
   const tag = products.map((e) => e.tag);
   const [product, setProduct] = useState(products);
-  const [defaultFilter, setDefaultFilter] = useState("solde");
 
-  const defaultTag = "solde";
-  const [selectedTag, setSelectedTag] = useState(defaultFilter);
+  const [selectedTag, setSelectedTag] = useState("solde");
   const uniqueTags = [...new Set(tag)];
   useEffect(() => {
     const defaultProducts = products.filter((e) =>
-      e.tag.toLowerCase().includes(defaultTag.toLowerCase())
+      e.tag.toLowerCase().includes(selectedTag.toLowerCase())
     );
     setProduct(defaultProducts);
   }, [products]);
 
   const filterProduct = (element) => {
-    setDefaultFilter(element);
-    const newTab = products.filter((e) => e.tag.includes(defaultFilter));
+    const newTab = products.filter((e) => e.tag.includes(element));
     setProduct(newTab);
+
     setSelectedTag(element);
   };
 

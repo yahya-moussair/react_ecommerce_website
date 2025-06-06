@@ -33,7 +33,7 @@ const Cart = () => {
             {cartArray.length != 0 ? (
               cartArray.map((e, index) => (
                 <div
-                  className="flex lg:flex-row flex-col gap-y-5 w-full justify-between items-end  bg-gray-300 p-4 rounded-lg"
+                  className="flex lg:flex-row flex-col gap-y-5 w-full justify-between items-end  bg-[#f0f0f0] p-4 rounded-lg"
                   key={index}
                 >
                   <div className="flex gap-x-5 ">
@@ -49,6 +49,12 @@ const Cart = () => {
                           Category :{" "}
                         </span>
                         {e.produit.tag}
+                      </h1>
+                      <h1 className="text-lg">
+                        <span className="lg:font-bold font-semibold">
+                          Price :{" "}
+                        </span>
+                        {"discount" in e.produit ? (e.produit.price - (e.produit.price * e.produit.discount / 100)).toFixed(2) : e.produit.price}
                       </h1>
                       <h1 className="text-lg">
                         <span className="lg:font-bold font-semibold">
