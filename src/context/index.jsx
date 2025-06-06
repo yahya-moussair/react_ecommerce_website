@@ -5,14 +5,27 @@ import cards from "../json/card";
 
 const MyContext = createContext();
 const MyProvider = ({ children }) => {
-  const [cartCounter , setCartCounter] = useState(0)
-  
+  const [cartCounter, setCartCounter] = useState(0);
+  const [cartArray, setCartArray] = useState([]);
+  const addToCart = (e , counter) => {
+    if (cartArray.includes(e)) {
+      return 0;
+    }
+    setCartCounter(cartCounter + 1);
+    const newTab = [...cartArray];
+    newTab.push({produit : e , quantity : counter});
+    setCartArray(newTab);
+  };
+
   const data = {
     slides,
     cards,
     products,
     cartCounter,
-    setCartCounter
+    setCartCounter,
+    addToCart,
+    setCartArray,
+    cartArray,
   };
   return <MyContext.Provider value={data}>{children}</MyContext.Provider>;
 };

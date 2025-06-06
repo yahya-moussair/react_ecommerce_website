@@ -4,11 +4,9 @@ import { useAppContext } from "../context";
 import { FaMinus, FaPlus } from "react-icons/fa";
 
 const DetailsProduct = () => {
-  const { products, cartCounter, setCartCounter } = useAppContext();
+  const { products, addToCart } = useAppContext();
   const { id } = useParams();
   const [counter, setCounter] = useState(1);
-  console.log(products[id]);
-  
 
   return (
     <>
@@ -47,23 +45,30 @@ const DetailsProduct = () => {
                     : "lg:text-[1.2rem] text-lg"
                 }`}
               >
-                {"discount" in products[id] ? products[id].price : products[id].price * counter.toFixed(2)} $
+                {"discount" in products[id]
+                  ? products[id].price
+                  : products[id].price * counter.toFixed(2)}{" "}
+                $
               </h1>
               <h1
                 className={`lg:text-[1.2rem] text-lg text-orange-600 ${
                   "discount" in products[id] ? "flex" : "hidden"
                 }`}
               >
-                {((
-                  products[id].price -
-                  (products[id].price * products[id].discount) / 100
-                )*counter).toFixed(2)}{" "}
+                {(
+                  (products[id].price -
+                    (products[id].price * products[id].discount) / 100) *
+                  counter
+                ).toFixed(2)}{" "}
                 $
               </h1>
             </div>
           </div>
           <button
-            onClick={() => setCartCounter(cartCounter + 1)}
+            onClick={() => {
+              addToCart(products[id], counter);
+              setCounter(1);
+            }}
             className={`w-full bg-black rounded-full py-2 text-white cursor-pointer`}
           >
             ADD TO CART

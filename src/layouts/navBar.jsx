@@ -10,13 +10,12 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import { FaPersonRifle } from "react-icons/fa6";
-import { CgProfile } from "react-icons/cg";
 import { CiShoppingCart } from "react-icons/ci";
 import { MdCancel } from "react-icons/md";
 import { useAppContext } from "../context";
 
 const NavBar = () => {
-  const {cartCounter} = useAppContext()
+  const { cartCounter } = useAppContext();
   const [open, setOpen] = useState(false);
   return (
     <>
@@ -49,13 +48,14 @@ const NavBar = () => {
           </Link>
           <div className="flex items-center gap-x-5">
             <h1 className="lg:flex hidden text-gray-500">fashe@example.com</h1>
-            <CgProfile className="text-2xl" />
-            <span className="relative">
-              <CiShoppingCart className="text-3xl font-bold" />
-              <span className="bg-red-700 px-[0.3rem] py-[0.1rem] text-[0.7rem] font-bold rounded-lg text-white absolute top-[-20%] right-[-25%]">
-                {cartCounter}
+            <Link to="/cart">
+              <span className="relative">
+                <CiShoppingCart className="text-3xl font-bold" />
+                <span className="bg-red-700 px-[0.3rem] py-[0.1rem] text-[0.7rem] font-bold rounded-lg text-white absolute top-[-20%] right-[-25%]">
+                  {cartCounter}
+                </span>
               </span>
-            </span>
+            </Link>
             <FaBars
               className="text-2xl font-bold lg:hidden"
               onClick={() => setOpen(true)}
@@ -71,27 +71,51 @@ const NavBar = () => {
             className="text-4xl font-bold lg:hidden absolute top-[5px] right-[5px]"
             onClick={() => setOpen(false)}
           />
-          <Link to="/" className="text-lg focus:text-[#e86b40] group relative" onClick={() => setOpen(false)}>
+          <Link
+            to="/"
+            className="text-lg focus:text-[#e86b40] group relative"
+            onClick={() => setOpen(false)}
+          >
             Home
             <span className="w-full group-hover:h-[2px] bg-gray-600 absolute transition-all duration-700 left-0 top-[95%]"></span>
           </Link>
-          <Link to="/shop" className="text-lg focus:text-[#e86b40] group relative" onClick={() => setOpen(false)}>
+          <Link
+            to="/shop"
+            className="text-lg focus:text-[#e86b40] group relative"
+            onClick={() => setOpen(false)}
+          >
             Shop
             <span className="w-full group-hover:h-[2px] bg-gray-600 absolute transition-all duration-700 left-0 top-[95%]"></span>
           </Link>
-          <Link to="/features" className="text-lg focus:text-[#e86b40] group relative" onClick={() => setOpen(false)}>
+          <Link
+            to="/features"
+            className="text-lg focus:text-[#e86b40] group relative"
+            onClick={() => setOpen(false)}
+          >
             Features
             <span className="w-full group-hover:h-[2px] bg-gray-600 absolute transition-all duration-700 left-0 top-[95%]"></span>
           </Link>
-          <Link to="/blog" className="text-lg focus:text-[#e86b40] group relative" onClick={() => setOpen(false)}>
+          <Link
+            to="/blog"
+            className="text-lg focus:text-[#e86b40] group relative"
+            onClick={() => setOpen(false)}
+          >
             Blog
             <span className="w-full group-hover:h-[2px] bg-gray-600 absolute transition-all duration-700 left-0 top-[95%]"></span>
           </Link>
-          <Link to="/about" className="text-lg focus:text-[#e86b40] group relative" onClick={() => setOpen(false)}>
+          <Link
+            to="/about"
+            className="text-lg focus:text-[#e86b40] group relative"
+            onClick={() => setOpen(false)}
+          >
             About
             <span className="w-full group-hover:h-[2px] bg-gray-600 absolute transition-all duration-700 left-0 top-[95%]"></span>
           </Link>
-          <Link to="/contact" className="text-lg focus:text-[#e86b40] group relative" onClick={() => setOpen(false)}>
+          <Link
+            to="/contact"
+            className="text-lg focus:text-[#e86b40] group relative"
+            onClick={() => setOpen(false)}
+          >
             Contact
             <span className="w-full group-hover:h-[2px] bg-gray-600 absolute transition-all duration-700 left-0 top-[95%]"></span>
           </Link>

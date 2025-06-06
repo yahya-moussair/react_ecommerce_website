@@ -3,7 +3,7 @@ import { Images } from "../constant/images";
 const products = [
   // Solde products
   {
-    id: "1",
+    id: "0",
     tag: "solde",
     name: "Boxy4 T-Shirt with Roll Sleeve",
     image: Images.fourthProduct,
@@ -13,7 +13,7 @@ const products = [
       "The Boxy4 T-Shirt with Roll Sleeve is a premium-quality garment designed for both comfort and style. Crafted from soft, breathable cotton, it offers a relaxed fit perfect for casual outings or lounging at home. Its unique roll sleeve design adds a modern edge, while the fabric ensures long-lasting durability even after multiple washes. Ideal for everyday wear, this shirt pairs effortlessly with jeans, shorts, or joggers. Whether you’re heading to a brunch or enjoying a laid-back weekend, the Boxy4 T-Shirt guarantees you look good while feeling great. A must-have for anyone who values versatility and minimalist fashion.",
   },
   {
-    id: "2",
+    id: "1",
     tag: "solde",
     name: "Boxy7 T-Shirt with Roll Sleeve",
     image: Images.firstProduct,
@@ -23,7 +23,7 @@ const products = [
       "Experience everyday style and comfort with the Boxy7 T-Shirt with Roll Sleeve. Made from high-quality fabric, this t-shirt features a classic design enhanced by rolled sleeves that give it a chic, urban flair. Its breathable material ensures comfort throughout the day, making it a staple for all seasons. The minimalist aesthetic makes it suitable for layering or wearing alone. Whether you're running errands, meeting friends, or relaxing at home, this t-shirt seamlessly blends into your lifestyle. Enjoy the perfect mix of fashion and functionality with a garment designed to last and impress. Great for gifting or personal use.",
   },
   {
-    id: "3",
+    id: "2",
     tag: "solde",
     name: "Boxy6 T-Shirt with Roll Sleeve",
     image: Images.secondProduct,
@@ -33,7 +33,7 @@ const products = [
       "The Boxy6 T-Shirt with Roll Sleeve is designed for modern individuals who value style and ease. Made with soft, breathable materials, this t-shirt delivers exceptional comfort while maintaining a fashionable edge. The rolled sleeve detail adds character, turning a simple piece into a standout wardrobe essential. Its versatile look makes it suitable for casual Fridays at work, weekend adventures, or lounging at home. Available in multiple sizes, it offers a flattering fit for all body types. Durable stitching and quality fabric mean this t-shirt will hold its shape and color wash after wash. It's a stylish, everyday go-to.",
   },
   {
-    id: "4",
+    id: "3",
     tag: "solde",
     name: "Boxy5 T-Shirt with Roll Sleeve",
     image: Images.thirdProduct,
@@ -45,7 +45,7 @@ const products = [
 
   // Best Seller products
   {
-    id: "5",
+    id: "4",
     tag: "bestSeller",
     name: "Boxy5 T-Shirt with Roll Sleeve",
     image: Images.secondProduct,
@@ -54,7 +54,7 @@ const products = [
       "Elevate your wardrobe with the best-selling Boxy5 T-Shirt with Roll Sleeve. Crafted for the trend-conscious individual, it combines simplicity and elegance in one timeless piece. The rolled sleeves provide a laid-back yet polished look, while the soft cotton material ensures day-long comfort. Ideal for both casual outings and semi-formal events, it can be paired with a range of bottoms and accessories. Its strong seams and colorfast fabric ensure longevity and consistent wear. Whether you're buying it for yourself or gifting it to a friend, this t-shirt remains a customer favorite for good reason. Easy to love, hard to replace.",
   },
   {
-    id: "6",
+    id: "5",
     tag: "bestSeller",
     name: "Boxy4 T-Shirt with Roll Sleeve",
     image: Images.thirdProduct,
@@ -63,7 +63,7 @@ const products = [
       "The Boxy4 T-Shirt with Roll Sleeve is a wardrobe essential for those who crave comfort without sacrificing style. Designed with rolled sleeves for a casual touch, this shirt transitions easily from day to night. The soft, breathable material keeps you cool and relaxed, making it an ideal choice for any season. Its minimalist design pairs effortlessly with jeans, chinos, or shorts, offering endless styling possibilities. With a focus on quality and fit, this t-shirt stands out as a reliable choice for any occasion. Durable, machine-washable, and timeless, it’s no wonder this shirt is a consistent best-seller.",
   },
   {
-    id: "7",
+    id: "6",
     tag: "bestSeller",
     name: "Boxy6 T-Shirt with Roll Sleeve",
     image: Images.fourthProduct,
@@ -72,7 +72,7 @@ const products = [
       "Perfect for those who appreciate subtle yet impactful fashion, the Boxy6 T-Shirt with Roll Sleeve delivers on all fronts. Featuring a relaxed fit and signature rolled sleeves, this t-shirt blends casual cool with everyday practicality. The breathable fabric keeps you comfortable, while its refined stitching ensures a premium finish. Ideal for brunches, strolls, or casual meetings, this tee is a great option for a clean and polished look. Customers love it for its versatility and quality construction. Once you try it on, you'll want it in every color. It's one of our top sellers for good reason.",
   },
   {
-    id: "8",
+    id: "7",
     tag: "bestSeller",
     name: "Boxy7 T-Shirt with Roll Sleeve",
     image: Images.firstProduct,
@@ -83,7 +83,7 @@ const products = [
 
   // Featured products
   {
-    id: "9",
+    id: "8",
     tag: "featured",
     name: "Boxy T-Shirt with Roll Sleeve Detail",
     image: Images.firstProduct,
@@ -92,7 +92,7 @@ const products = [
       "Featured for its unique blend of elegance and comfort, the Boxy T-Shirt with Roll Sleeve Detail is a standout in any collection. It features premium cotton that feels amazing on the skin and retains its shape and softness over time. The roll sleeve accents offer a subtle yet stylish touch, elevating the shirt's overall appeal. Whether you're heading to a casual meet-up or a coffee date, this shirt ensures you look effortlessly chic. It’s breathable, durable, and available in a range of sizes. Add this to your wardrobe and experience the perfect balance of comfort and sophistication.",
   },
   {
-    id: "10",
+    id: "9",
     tag: "featured",
     name: "Boxy1 T-Shirt with Roll Sleeve",
     image: Images.secondProduct,
@@ -101,7 +101,7 @@ const products = [
       "Simple, stylish, and undeniably comfortable—the Boxy1 T-Shirt with Roll Sleeve offers everything you want in a daily wear essential. It’s made from soft, breathable material designed to keep you cool and comfortable throughout the day. The rolled sleeve adds a modern flair, making it more versatile than your average tee. This t-shirt can be dressed up or down depending on the occasion and pairs effortlessly with a wide range of outfits. Easy to maintain and resistant to fading, it will remain a favorite for seasons to come. An excellent addition to any wardrobe, especially for minimalists.",
   },
   {
-    id: "11",
+    id: "10",
     tag: "featured",
     name: "Boxy2 T-Shirt with Roll Sleeve",
     image: Images.thirdProduct,
@@ -110,7 +110,7 @@ const products = [
       "Step up your fashion game with the Boxy2 T-Shirt with Roll Sleeve. Engineered with superior fabric, this shirt offers unmatched comfort and durability. Its signature roll sleeve design adds character and distinguishes it from other basic tees. Designed for modern lifestyles, it fits seamlessly into work-from-home outfits or casual daywear. The fabric is soft yet resilient, ensuring that it holds up after countless wears and washes. Ideal for those who appreciate timeless basics with a twist. Once you add this to your collection, it’s likely to become one of your most-reached-for pieces. A featured item for good reason.",
   },
   {
-    id: "12",
+    id: "11",
     tag: "featured",
     name: "Boxy3 T-Shirt with Roll Sleeve",
     image: Images.fourthProduct,

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   const Prices = ["10", "50", "100", "150", "200"];
-  const { products, cartCounter, setCartCounter } = useAppContext();
+  const { products } = useAppContext();
   const tag = [...new Set(products.map((e) => e.tag))];
 
   const [filteredProducts, setFilteredProducts] = useState(products);
@@ -23,7 +23,6 @@ const Header = () => {
     if (tag && tag !== "All") {
       filtered = filtered.filter((p) => p.tag.includes(tag));
     }
-
 
     if (price) {
       const min = parseInt(price);
@@ -140,14 +139,14 @@ const Header = () => {
                 className={`rounded-lg relative group overflow-hidden lg:before:absolute lg:before:content-[""] lg:before:w-full lg:before:h-full hover:lg:before:bg-gray-800/30 lg:before:transition-all lg:before:duration-700 `}
               >
                 <img className="rounded-lg" src={e.image} alt={e.name} />
-                <button
-                  onClick={() => setCartCounter(cartCounter + 1)}
+                <Link
+                  to={`/details/${e.id}`}
                   className={`w-fit px-5 py-2 h-fit text-white cursor-pointer rounded-full bg-black lg:hover:bg lg:absolute lg:flex hidden lg:bottom-[-100%] group-hover:bottom-[10%] hover:bg-[#e65540] transition-all duration-700  lg:left-[50%] translate-x-[-50%] `}
                 >
-                  ADD TO CART
-                </button>
+                  Show Details
+                </Link>
               </div>
-              <Link to="#">
+              <Link to={`/details/${e.id}`}>
                 <h1 className="text-lg text-gray-500 hover:text-[#e65540] lg:transition-all duration-300">
                   {e.name}
                 </h1>
@@ -170,12 +169,12 @@ const Header = () => {
                   {(e.price - (e.price * e.discount) / 100).toFixed(2)} $
                 </h1>
               </div>
-              <button
-                onClick={() => setCartCounter(cartCounter + 1)}
-                className={`w-full bg-black rounded-full py-2 text-white lg:hidden`}
+              <Link
+                to={`/details/${e.id}`}
+                className={`w-full text-center bg-black rounded-full py-2 text-white lg:hidden `}
               >
-                ADD TO CART
-              </button>
+                Show Details
+              </Link>
             </div>
           ))}
         </div>
