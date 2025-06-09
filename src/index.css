@@ -1,7 +1,11 @@
 @import "tailwindcss";
 * {
-  font-family: "Roboto", sans-serif;
+  font-family: "Raleway", sans-serif;
   user-select: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
 }
 
 .bgImage {
