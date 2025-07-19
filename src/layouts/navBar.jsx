@@ -62,10 +62,12 @@ const NavBar = () => {
             />
           </div>
         </div>
+        {/* Centered Navbar Links */}
         <nav
           className={`lg:relative fixed flex lg:flex-row flex-col items-center justify-center gap-x-10 gap-y-5 lg:top-0 lg:left-0 ${
             open ? "top-[2%]" : "top-[-200%]"
-          }  transition-all duration-700 rounded-xl lg:bg-transparent bg-white lg:shadow-none shadow-2xl lg:w-fit w-[90%] lg:m-0 mx-auto lg:h-fit h-[95%] text-xl z-50`}
+          } transition-all duration-700 rounded-xl lg:bg-transparent bg-white lg:shadow-none shadow-2xl lg:w-full w-[90%] lg:m-0 mx-auto lg:h-fit h-[95%] text-xl z-50`}
+          style={{ justifyContent: 'center' }}
         >
           <MdCancel
             className="text-4xl font-bold lg:hidden absolute top-[5px] right-[5px]"
@@ -85,22 +87,6 @@ const NavBar = () => {
             onClick={() => setOpen(false)}
           >
             Shop
-            <span className="w-full group-hover:h-[2px] bg-gray-600 absolute transition-all duration-700 left-0 top-[95%]"></span>
-          </Link>
-          <Link
-            to="/features"
-            className="text-lg focus:text-[#e86b40] group relative"
-            onClick={() => setOpen(false)}
-          >
-            Features
-            <span className="w-full group-hover:h-[2px] bg-gray-600 absolute transition-all duration-700 left-0 top-[95%]"></span>
-          </Link>
-          <Link
-            to="/blog"
-            className="text-lg focus:text-[#e86b40] group relative"
-            onClick={() => setOpen(false)}
-          >
-            Blog
             <span className="w-full group-hover:h-[2px] bg-gray-600 absolute transition-all duration-700 left-0 top-[95%]"></span>
           </Link>
           <Link
